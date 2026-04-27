@@ -104,5 +104,9 @@ print("Waiting for you to plug in or unplug your charger!")
 let loopSource = IOPSNotificationCreateRunLoopSource(callback, nil).takeRetainedValue()
 CFRunLoopAddSource(CFRunLoopGetCurrent(), loopSource, .defaultMode)
 
+// Play the startup sound
+let startupURL = URL(fileURLWithPath: "/Users/dr.arora/chargemebbg/assets/startup.aiff")
+engine.playCustomURLs([startupURL], intensity: .hard, volume: 1.0)
+
 // Keep the script running
 RunLoop.current.run()
