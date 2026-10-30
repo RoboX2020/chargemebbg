@@ -1,4 +1,8 @@
 #!/bin/bash
+#!/bin/bash
+# generate_sexy.sh - same trick as generate_custom.sh with a bigger set of
+# lines, alternating the Samantha and Victoria voices. macOS only. NOTE:
+# output folder is hardcoded to /Users/dr.arora/... - edit it elsewhere.
 DIR="/Users/dr.arora/chargemebbg/sounds/in"
 
 say -v "Samantha" "[[rate 120]] Ooooch,,." -o "$DIR/ai_ouch_1.aiff"
